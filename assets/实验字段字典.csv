@@ -1,0 +1,62 @@
+﻿field_id,module,field_name,type,required,allow_na,owner
+A01,A. 实验身份,Experiment ID,string,必须,否,平台
+A02,A. 实验身份,实验名称,string,必须,否,负责人
+A03,A. 实验身份,实验负责人,string,必须,否,负责人
+A04,A. 实验身份,开始时间,datetime,必须,否,平台
+A05,A. 实验身份,结束时间,datetime,必须,否,平台
+A06,A. 实验身份,实验状态,enum,必须,否,平台
+A07,A. 实验身份,实验背景,text,必须,否,负责人
+A08,A. 实验身份,业务目标,text,必须,否,业务 DRI
+B01,B. 实验设计,Hypothesis,text,必须,否,负责人
+B02,B. 实验设计,Treatment,object,必须,否,产品/工程
+B03,B. 实验设计,Control,object,必须,否,产品/工程
+B04,B. 实验设计,Randomization Unit,object,必须,否,数据科学
+B05,B. 实验设计,Exposure定义,text,必须,否,数据科学/工程
+B06,B. 实验设计,实验比例,object,必须,否,负责人
+B07,B. 实验设计,实验周期,object,必须,否,负责人
+B08,B. 实验设计,实验互斥,object,必须,否,平台/数据科学
+C01,C. 数据质量,样本量,object,必须,否,数据科学
+C02,C. 数据质量,SRM,object,必须,否,数据科学
+C03,C. 数据质量,实验前平衡性,object,必须,否,数据科学
+C04,C. 数据质量,曝光是否完整,object,必须,否,数据科学
+C05,C. 数据质量,是否存在污染,object,必须,否,数据科学
+C06,C. 数据质量,是否存在重复用户,object,必须,否,数据科学
+C07,C. 数据质量,数据链路是否完整,object,必须,否,数据工程
+D01,D. 指标,North Star,string,必须,否,业务 DRI
+D02,D. 指标,Primary Metric,object,必须,否,数据科学
+D03,D. 指标,Secondary Metrics,array,必须,否,数据科学
+D04,D. 指标,Guardrail,array,必须,否,业务/数据科学
+D05,D. 指标,指标口径,text,必须,否,分析师
+D06,D. 指标,指标计算SQL,url,必须,否,分析师
+D07,D. 指标,实验前是否预设,object,必须,否,负责人/数据科学
+E01,E. 统计,Effect,object,必须,否,数据科学
+E02,E. 统计,Relative Lift,object,必须,否,数据科学
+E03,E. 统计,Absolute Lift,object,必须,否,数据科学
+E04,E. 统计,CI,object,必须,否,数据科学
+E05,E. 统计,P-value,object,必须,否,数据科学
+E06,E. 统计,Multiple Testing,object,必须,否,数据科学
+E07,E. 统计,Statistical Power,object,必须,否,数据科学
+F01,F. 异质性,新/老用户,object,必须,是,数据科学
+F02,F. 异质性,高/低价值用户,object,必须,是,数据科学
+F03,F. 异质性,高频/低频,object,必须,是,数据科学
+F04,F. 异质性,渠道,object,必须,是,数据科学
+F05,F. 异质性,商品,object,必须,是,数据科学
+F06,F. 异质性,商家,object,必须,是,数据科学
+F07,F. 异质性,其他业务关键维度,array,必须,是,数据科学
+G01,G. 长期,7天,object,必须,是,数据科学
+G02,G. 长期,14天,object,必须,是,数据科学
+G03,G. 长期,30天,object,必须,是,数据科学
+G04,G. 长期,全量后,object,必须,是,业务/数据科学
+G05,G. 长期,是否衰减,object,必须,是,数据科学
+G06,G. 长期,是否存在副作用,object,必须,是,业务/数据科学
+H01,H. 决策,实验结论,object,必须,否,数据科学
+H02,H. 决策,业务结论,text,必须,否,业务 DRI
+H03,H. 决策,是否全量,object,必须,否,业务 DRI
+H04,H. 决策,是否停止,object,必须,否,业务 DRI
+H05,H. 决策,是否定向,object,必须,否,业务 DRI
+H06,H. 决策,是否需要二次实验,object,必须,否,业务 DRI
+I01,I. 沉淀,实验文档,url,必须,否,负责人
+I02,I. 沉淀,SQL,url,必须,否,分析师
+I03,I. 沉淀,Dashboard,url,必须,否,分析师
+I04,I. 沉淀,知识库,string,必须,否,负责人
+I05,I. 沉淀,可复用经验,object,必须,否,负责人/数据科学
